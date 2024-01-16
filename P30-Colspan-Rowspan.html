@@ -1,0 +1,51 @@
+<!-- P30-Colspan_Rowspan.html -->
+<!-- Demonstrates the use of colspan and rowspan attributes in HTML tables. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata, including the title of the document. -->
+    <title>Colspan & Rowspan</title>
+</head>
+<body>
+
+    <!-- Table displaying food items and their prices in INR & USD -->
+    <table border="black">
+        <caption>Food items and their price in INR & USD</caption>
+
+        <thead>
+            <tr>
+                <!-- Rowspan attribute spanning two rows for 'Item' -->
+                <th rowspan="2">Item</th>
+                <!-- Colspan attribute spanning two columns for 'Price' -->
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>FROOTI</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+
+            <tr>
+                <td>SAMOSA</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+
+            <tr>
+                <td>CHIPS</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
