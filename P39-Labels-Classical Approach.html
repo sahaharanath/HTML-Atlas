@@ -1,0 +1,66 @@
+<!-- P39-Labels-Classical Approach.html -->
+<!-- Demonstrates the classical approach of using labels with "for" and "id" attributes in HTML forms. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Labels - Classical Approach</title>
+</head>
+
+<body>
+
+<!-- Introduction -->
+<h4>Exploring Labels Using Classical Approaches (ID & FOR)</h4>
+<hr>
+<p></p>
+
+<!-- Form with Labels Using ID & FOR -->
+<form action="/action">
+
+    <!-- Username Label and Input -->
+    <label for="Username">Enter Username:</label>
+    <input type="text" id="Username" placeholder="Username">
+
+    <p></p>
+
+    <!-- Password Label and Input -->
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" placeholder="Password">
+
+    <p></p>
+
+    <!-- Email Label and Input -->
+    <label for="email">Enter your email ID:</label>
+    <input type="email" id="email" placeholder="Email ID">
+
+    <p></p>
+
+    <!-- Age Label and Input -->
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" placeholder="Your age">
+
+    <p></p>
+    <hr>
+
+</form>
+
+<!-- Explanation -->
+<p>
+    In this approach, each label is associated with an input using the "for" attribute, which references the input's "id."
+    This classical method improves accessibility and maintains a clear connection between labels and their corresponding inputs.
+    It's important to use unique IDs for each input, ensuring proper functionality and adherence to best practices.
+</p>
+
+<p>
+    Note: In a program, each "id" should be unique. The "for" attribute in labels should match the corresponding input's "id" to establish a connection.
+</p>
+
+<p>
+    Additionally, in this example, inputs and labels are not nested, offering an alternative structure compared to the previous approach.
+</p>
+
+</body>
+
+</html>
