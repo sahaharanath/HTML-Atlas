@@ -1,0 +1,50 @@
+<!-- P41-Types Attributes of Buttons.html -->
+<!-- Describes the three types of button attributes: submit, button, and reset, with a login form example. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Types Attributes of Buttons</title>
+</head>
+
+<body>
+<h4>We have 3 types of button attributes! Those are:</h4>
+<ul type="disc">
+    <li><b>type="submit"</b> &#x2192; Used to submit data in a form.</li>
+    <li><b>type="button"</b> &#x2192; Used to trigger a custom JavaScript action.</li>
+    <li><b>type="reset"</b> &#x2192; Used to reset all filled data in a form.</li>
+</ul>
+<br>
+<hr>
+<p><b><big>Login Form</big></b></p>
+<form action="/action">
+    <!-- Username Input -->
+    <label for="username">Enter Username: </label>
+    <input type="text" id="username" placeholder="Username">
+    <p></p>
+
+    <!-- Password Input -->
+    <label for="login_password">Enter your login password: </label>
+    <input type="password" id="login_password" placeholder="Login Password">
+    <p></p>
+
+    <!-- Submit, Reset, and Custom Button -->
+    <button type="submit">SUBMIT</button>
+    <button type="reset">RESET</button>
+    <button type="button">CUSTOM ACTION</button>
+
+    <hr>
+</form>
+
+<!-- Additional Information -->
+<p><b>Additional Information:</b></p>
+<ul type="square">
+    <li><b>Submit Button:</b> Submits the form data to the server.</li>
+    <li><b>Reset Button:</b> Resets all filled form fields to their default values.</li>
+    <li><b>Custom Button:</b> Can be customized with JavaScript for specific actions.</li>
+</ul>
+</body>
+
+</html>
