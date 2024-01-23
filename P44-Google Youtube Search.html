@@ -1,0 +1,66 @@
+<!-- P44-Google Youtube Search.html -->
+<!-- Demonstrates how to perform a search on Google and YouTube by using the 'name' attribute in forms. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google & YouTube Search</title>
+</head>
+
+<body>
+<h1>We can directly open Google, YouTube with search results from our form submission using the 'name' attribute</h1>
+<ul type="square">
+    <li>
+        <ol>
+            <li>Open YouTube in the browser</li>
+            <li>Search for something (e.g., 'Apple')</li>
+            <li>After clicking the search button in YouTube, observe the URL:</li>
+            <li>https://www.youtube.com/results?search_query=Apple</li>
+            <li><b>The action used is: <big>https://www.youtube.com/results</big></b></li>
+            <li><b>The name used is: <big>search_query</big></b></li>
+            <li>Creating a form with type="text," the same name, and action will append the input to the URL after submission.</li>
+            <li>It will redirect to YouTube with the completed URL.</li>
+        </ol>
+    </li>
+    <br>
+    <li>
+        <ol>
+            <li>Open Google in the browser</li>
+            <li>Search for something (e.g., 'Apple')</li>
+            <li>After clicking the search button in Google, observe the URL:</li>
+            <li>https://www.google.com/search?q=apple</li>
+            <li><b>The action used is: <big>https://www.google.com/search</big></b></li>
+            <li><b>The name used is: <big>q</big></b></li>
+            <li>Creating a form with type="text," the same name, and action will append the input to the URL after submission.</li>
+            <li>It will redirect to Google with the completed URL.</li>
+        </ol>
+    </li>
+</ul>
+<br>
+<hr>
+<br>
+<b><big>YouTube:</big></b>
+<p></p>
+<img src="Assets/Youtube_Logo.png" height="60px" width="60px">
+<form action="https://www.youtube.com/results">
+    <label for="YT-SEARCH">Search in YouTube:</label>
+    <input type="text" placeholder="Search" name="search_query" id="YT-SEARCH">
+    <button>SUBMIT</button>
+</form>
+<br>
+<hr>
+<b><big>Google:</big></b>
+<p></p>
+<img src="Assets/Google_Logo.png" height="60px" width="60px">
+<form action="https://www.google.com/search">
+    <label for="Google-SEARCH">Search in Google:</label>
+    <input type="text" placeholder="Search" name="q" id="Google-SEARCH">
+    <button>SUBMIT</button>
+</form>
+<br>
+<hr>
+</body>
+
+</html>
