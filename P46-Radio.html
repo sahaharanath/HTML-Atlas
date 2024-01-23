@@ -1,0 +1,82 @@
+<!-- P46-Radio.html -->
+<!-- Demonstrates the use of radio elements in HTML forms and how the URL changes based on selected options. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Radio</title>
+</head>
+
+<body>
+    <h1>Understanding Radio Elements:</h1>
+    <p>Only one option can be selected at a time. <b>Note:</b> When one option is selected, any previously selected option will be unselected, as all options are connected through the <b><big>name attribute</big></b> inside the input element.</p>
+    <hr>
+    
+    <form action="/action">
+        <br>
+        <b> <big><mark>1st Case:</mark></big> Choose your favorite subject</b>
+        <p></p>
+        <label for="beng">Bengali:</label>
+        <input type="radio" id="beng" name="Subjects">
+    
+        <label for="eng">English:</label>
+        <input type="radio" id="eng" name="Subjects">
+    
+        <label for="math">Mathematics:</label>
+        <input type="radio" id="math" name="Subjects">
+    
+        <label for="geo">Geography:</label>
+        <input type="radio" id="geo" name="Subjects">
+    
+        <p></p>
+        <button>SUBMIT</button>
+    </form>
+    
+    <br>
+    <hr>
+    
+    <p>
+        Here, if we select any option and submit, notice the URL: <b><mark>http://localhost:63342/action?Subjects=on</mark></b>. In this case, no data is passed through the URL. To pass data through the URL using the radio element, we use the <big>"value" attribute.</big> As we've seen before, the 'name' attribute passes data through the URL, and here 'name' keeps all options connected. We will use the 'value' attribute to pass data through the URL.
+    </p>
+    
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    
+    <form action="/action">
+        <br>
+        <b> <big><mark>2nd Case:</mark></big> Choose your favorite subject</b>
+        <p></p>
+        <label for="bengali">Bengali:</label>
+        <input type="radio" id="bengali" name="Sub" value="bengali">
+    
+        <label for="english">English:</label>
+        <input type="radio" id="english" name="Sub" value="english">
+    
+        <label for="mathematics">Mathematics:</label>
+        <input type="radio" id="mathematics" name="Sub" value="mathematics">
+    
+        <label for="geography">Geography:</label>
+        <input type="radio" id="geography" name="Sub" value="geography">
+    
+        <p></p>
+        <button>SUBMIT</button>
+    </form>
+    
+    <br>
+    <hr>
+    
+    <p>
+        Now, notice the URL when 'Mathematics' is selected: <b><mark>http://localhost:63342/action?Sub=mathematics</mark></b>. Data is passed through the URL in this format: <big><b>'name'='option'</b></big>
+    </p>
+    
+    <br>
+    <hr>
+
+</body>
+</html>
