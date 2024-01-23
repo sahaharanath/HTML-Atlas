@@ -1,0 +1,43 @@
+<!-- P45-Checkbox.html -->
+<!-- Demonstrates the use of checkboxes in HTML forms and how the URL changes based on checkbox status. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+</head>
+
+<body>
+<h1>Let's learn about Checkbox:</h1>
+
+<!-- (1) All checkboxes are by default unchecked -->
+<form action="/first-action">
+    <p><b><big>(1)</big> All checkboxes are by default unchecked</b></p>
+    <label for="age">I am 18+</label>
+    <input type="checkbox" id="age" name="age">
+    <button>SUBMIT</button>
+</form>
+
+<br>
+<hr>
+
+<!-- (2) To make checkboxes by default checked, 'checked' attribute is used inside input -->
+<form action="/second-action">
+    <p><b><big>(2)</big> To make checkboxes by default checked, 'checked' attribute is used inside input</b></p>
+    <label for="age-verify">I am 18+</label>
+    <input type="checkbox" id="age-verify" name="age" checked>
+    <button>SUBMIT</button>
+</form>
+
+<hr>
+
+<!-- Additional Information -->
+<p>When the checkbox is checked and the form is submitted, the URL will include the parameter 'age=on' (where n is a value assigned to the checkbox).</p>
+<p>If the checkbox is not checked, the URL won't include the 'age' parameter.</p>
+<p>This mechanism is commonly used to pass boolean values through URLs, such as for filtering or conditional actions.</p>
+
+</body>
+
+</html>
