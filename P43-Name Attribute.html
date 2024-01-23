@@ -1,0 +1,54 @@
+<!-- P43-NameAttribute.html -->
+<!-- Demonstrates the use of the 'name' attribute in HTML forms for URL parameterization. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Attribute</title>
+</head>
+
+<body>
+
+    <div style="border: black; border-style: solid">
+        <p><b><mark>&nbsp; <big>(1)</big> Form without Using Name Attribute:</mark></b></p>
+
+        <form action="/action">
+            <label>&nbsp; Enter Username: </label>
+            <input type="text" id="username" placeholder="Username">
+            <p></p>
+            <label for="password">&nbsp; Enter Password:</label>
+            <input type="password" id="password" placeholder="Password">
+            <p></p>
+            &nbsp; <button>SUBMIT</button>
+            <p>&nbsp; After submission, the URL appears as: http://localhost:63342/action?</p>
+            <p><b>&nbsp; URL : </b> .../action?</p>
+        </form>
+    </div>
+
+    <br>
+
+    <div style="border: black; border-style: solid">
+        <p>&nbsp; If we want to pass data through the URL after form submission, the 'name' attribute comes in handy. </p>
+        <p><b><mark>&nbsp; <big>(2)</big> Form Using Name Attribute:</mark></b></p>
+
+        <form action="/action">
+            <label>&nbsp; Enter User ID: </label>
+            <input type="text" id="user-id" placeholder="User ID" name="User-ID">
+            <p></p>
+            <label for="password">&nbsp; Enter Login Password:</label>
+            <input type="password" id="login-password" placeholder="Password" name="Login-Password">
+            <p></p>
+            &nbsp; <button>SUBMIT</button>
+            <p>&nbsp; After submission, the URL appears as: http://localhost:63342/action?User-ID=XYZ&Login-Password=12345</p>
+            <p><b>&nbsp; URL : </b> ...action?User-ID=XYZ&Login-Password=12345</p>
+            <p>&nbsp; By entering User ID: XYZ and Password: 12345, the submitted data is visible in the URL.</p>
+            <p>&nbsp; This shows that data is appended to the URL after the given action (e.g., '/action' followed by '?').</p>
+            <p><b>&nbsp; Note: This method is not secure for sensitive information, and safer methods will be explored later.</b></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
