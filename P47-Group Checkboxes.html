@@ -1,0 +1,43 @@
+<!-- P47-Group Checkboxes.html -->
+<!-- Demonstrates grouping checkboxes using the 'name' attribute and passing submitted data through the URL using the 'value' attribute. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Group Checkboxes</title>
+</head>
+
+<body>
+
+    <h1>Grouping Checkboxes and Passing Data:</h1>
+    <p>We can group checkboxes using the 'name' attribute, allowing users to select more than one option together. Let's also explore how to pass the submitted data through the URL using the 'value' attribute:</p>
+
+    <hr>
+    <form action="/action">
+        <p><b>Choose your class subjects:</b></p>
+        <p></p>
+
+        <label for="beng">Bengali: </label>
+        <input type="checkbox" id="beng" name="subjects" value="Bengali">
+
+        <label for="eng">English: </label>
+        <input type="checkbox" id="eng" name="subjects" value="English">
+
+        <label for="math">Mathematics: </label>
+        <input type="checkbox" id="math" name="subjects" value="Mathematics">
+
+        <label for="geo">Geography: </label>
+        <input type="checkbox" id="geo" name="subjects" value="Geography">
+
+        <p></p>
+        <button>SUBMIT</button>
+
+    </form>
+
+    <br>
+    <hr>
+
+</body>
+</html>
